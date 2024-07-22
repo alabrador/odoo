@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <record id="qr_employee_kamba_inherit" model="ir.ui.view">
+            <field name="name">hr.employee.view.kanban_inheret</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.hr_kanban_view_employees"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='image_1024']" position="after">
+                    <field name="qr_code" widget="image" class="oe_avatar" options="{'size': [80, 80]}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
