@@ -11,7 +11,7 @@
     'license': 'GPL-3',
     'depends': ['hr'],
     'data': [
-        'views/hr_employee_views.xml',
+        'views/hr_employee_views_dni.xml',
     ],
     'images': [
     'static/description/icon.png'
