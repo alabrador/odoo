@@ -1,7 +1,7 @@
 <odoo>
     <data>
-        <record id="view_employee_form_inherit" model="ir.ui.view">
-            <field name="name">hr.employee.form.inherit</field>
+        <record id="qr_pin_form_inherit" model="ir.ui.view">
+            <field name="name">hr.qr_pin.form.inherit</field>
             <field name="model">hr.employee</field>
             <field name="inherit_id" ref="hr.view_employee_form"/>
             <field name="arch" type="xml">
