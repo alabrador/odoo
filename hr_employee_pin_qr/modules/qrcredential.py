@@ -4,8 +4,6 @@ import base64
 from io import BytesIO
 
 class QrCredential(models.Model):
-    _inherit = 'hr.employee'
-
     @api.depends('pin')
     def generate_qr_code(self):
         for employee in self:
