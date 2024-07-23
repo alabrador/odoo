@@ -1,11 +1,14 @@
-from odoo import models, api
+from odoo import fields, models, api
 import qrcode
 import base64
 from io import BytesIO
 
-class pinqr(models.Model):
-#   _inherit = 'hr.employee'
-#   pin_qr = fields.Binary("QR Pin", attachment=True, readonly=True)
+class Employee(models.Model):
+    _inherit = 'hr.employee'
+    
+    qr_code = fields.Binary("QR Code", attachment=True, readonly=True)
+
+    @api.depends('pin')
 
     def generate_qr_code(self):
         for employee in self:

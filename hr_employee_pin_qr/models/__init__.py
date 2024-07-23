@@ -1,1 +1,1 @@
-from . import pinqr
+from . import employee
