@@ -3,7 +3,7 @@ import qrcode
 import base64
 from io import BytesIO
 
-class QrCredential(models.Model):
+class Employee(models.Model):
 #   _inherit = 'hr.employee'
 #   pin_qr = fields.Binary("QR Pin", attachment=True, readonly=True)
 
