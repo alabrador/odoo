@@ -3,11 +3,10 @@ import qrcode
 import base64
 from io import BytesIO
 
-class Employee(models.Model):
+class pinqr(models.Model):
 #   _inherit = 'hr.employee'
 #   pin_qr = fields.Binary("QR Pin", attachment=True, readonly=True)
 
-    @api.depends('pin')
     def generate_qr_code(self):
         for employee in self:
             if employee.pin:
