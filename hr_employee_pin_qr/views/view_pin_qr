@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <record id="view_employee_form_inherit" model="ir.ui.view">
+            <field name="name">hr.employee.form.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+            <xpath expr="//field[@name='image_1920']" position="after">
+                    <field name="pin" widget="image" class="oe_avatar"/>
+            </xpath>
+            <xpath expr="//field[@name='pin']" position="after">
+                    <button name="generate_qr_code" type="object" string="Generar" class="btn-primary"/>
+            </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
