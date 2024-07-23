@@ -8,7 +8,7 @@
             <xpath expr="//field[@name='image_1920']" position="after">
                     <field name="qr_code" widget="image" class="oe_avatar"/>
             </xpath>
-            <xpath expr="//field[@name='pin']" position="inside">
+            <xpath expr="//field[@name='pin']" position="after">
                     <button name="generate_qr_code" type="object" string="Generar" class="btn-primary"/>
             </xpath>
             </field>
