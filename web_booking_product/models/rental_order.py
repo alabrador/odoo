@@ -34,8 +34,6 @@ class RentalOrder(models.Model):
                 ('rental_date_end', '>', order.rental_date_start),
                 ('id', '!=', order.id),
             ])
-            if overlapping_orders:
-                raise ValidationError('The product is already rented for the selected period.')
 
     def action_confirm(self):
         for order in self:

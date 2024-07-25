@@ -34,5 +34,5 @@
     </record>
 
     <menuitem id="menu_rental_root" name="Rental Management" sequence="10"/>
-    <menuitem id="menu_rental_orders" name="Rental Orders" parent="menu_rental_root" action="action_rental_order"/>
+    <menuitem id="menu_rental_orders" name="Rental Orders" parent="menu_rental_root" action=""/>
 </odoo>
