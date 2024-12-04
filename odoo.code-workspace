@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "web_booking_product"
+		},
+		{
+			"path": "hr_employee_qr"
+		},
+		{
+			"path": "hr_employee_dni"
+		}
+	],
+	"settings": {}
+}
